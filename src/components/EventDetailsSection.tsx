@@ -25,9 +25,9 @@ const EventDetailsSection = () => {
     },
     {
       icon: HelpCircle,
-      title: "Conflux Connection",
-      formalName: "Tech Connection",
-      description: "This category promotes interaction, collaboration, and knowledge sharing among participants. Through engaging technical activities, it encourages networking, teamwork, and exposure to emerging technologies.",
+      title: "BrainWave",
+      formalName: "Tech Quiz",
+      description: "A fast-paced quiz that challenges participants on core technical concepts and emerging technologies. The event sharpens analytical thinking, accuracy, and quick decision-making in a competitive setting.",
       color: "neon-cyan",
     },
     {
