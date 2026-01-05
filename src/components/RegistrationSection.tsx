@@ -9,12 +9,12 @@ const RegistrationSection = () => {
       options: [
         {
           label: "Without Hardcopy Certificate",
-          price: "₹199",
+          price: "₹200",
           url: "https://forms.google.com/solo-without-certificate",
         },
         {
           label: "With Hardcopy Certificate",
-          price: "₹299",
+          price: "₹350",
           url: "https://forms.google.com/solo-with-certificate",
         },
       ],
@@ -25,12 +25,12 @@ const RegistrationSection = () => {
       options: [
         {
           label: "Without Hardcopy Certificate",
-          price: "₹349",
+          price: "₹400",
           url: "https://forms.google.com/duo-without-certificate",
         },
         {
           label: "With Hardcopy Certificate",
-          price: "₹449",
+          price: "₹550",
           url: "https://forms.google.com/duo-with-certificate",
         },
       ],
@@ -41,12 +41,12 @@ const RegistrationSection = () => {
       options: [
         {
           label: "Without Hardcopy Certificate",
-          price: "₹449",
+          price: "₹600",
           url: "https://forms.google.com/trio-without-certificate",
         },
         {
           label: "With Hardcopy Certificate",
-          price: "₹549",
+          price: "₹750",
           url: "https://forms.google.com/trio-with-certificate",
         },
       ],
@@ -57,12 +57,12 @@ const RegistrationSection = () => {
       options: [
         {
           label: "Without Hardcopy Certificate",
-          price: "₹549",
+          price: "₹800",
           url: "https://forms.google.com/team-without-certificate",
         },
         {
           label: "With Hardcopy Certificate",
-          price: "₹699",
+          price: "₹950",
           url: "https://forms.google.com/team-with-certificate",
         },
       ],
@@ -143,8 +143,7 @@ const RegistrationSection = () => {
         {/* Note */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground text-sm max-w-xl mx-auto">
-            Note: Registration fee is non-refundable. Hardcopy certificates will be 
-            mailed to your address within 30 days of event completion.
+            Note: Registration fee is non-refundable.
           </p>
         </div>
       </div>

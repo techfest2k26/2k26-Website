@@ -10,7 +10,7 @@ const AboutSection = () => {
     {
       icon: Trophy,
       title: "Multiple Events",
-      description: "15+ technical competitions and challenges",
+      description: "5+ technical competitions and challenges",
     },
     {
       icon: Award,
@@ -36,7 +36,7 @@ const AboutSection = () => {
             <span className="neon-text-gradient">About</span> The Event
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-4">
-            Organized by the Department of Computer Science & Engineering
+            Organized by the Department of Artificial Intelligence and Data Science
           </p>
         </div>
 
@@ -49,21 +49,16 @@ const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-heading font-bold text-foreground mb-4 flex items-center gap-3">
                 <Lightbulb className="w-6 h-6 text-neon-cyan md:hidden" />
-                Welcome to TECHFEST 2K25
+                Welcome to TECHFEST 2K26
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                TECHFEST 2K25 is a flagship national-level technical festival organized by the 
-                Computer Science Association. This 24-hour coding marathon brings together the 
-                brightest minds from colleges across India to compete, innovate, and showcase 
-                their technical prowess.
+                This National Level TechFest is a platform created for students who are passionate about technology, innovation, and real-world problem solving. The event brings together young minds from across the country to learn, compete, and collaborate in a professional and engaging environment.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                TechFest focuses on practical skills, creative thinking, and technical excellence. Through well-designed events such as Conceptum (Paper Presentation), Runtime Resolve (Code Debugging), ProtoVista (Project Expo), Synaptech (Tech Connection), and SkillVanta (Workshops), participants are encouraged to explore ideas, strengthen their skills, and showcase their talent.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                From intense hackathons to creative coding challenges, robotics to web development 
-                competitions – TECHFEST 2K25 offers a platform for students to push their boundaries, 
-                learn from industry experts, and network with like-minded tech enthusiasts. Whether 
-                you're a seasoned coder or just starting your tech journey, there's something here 
-                for everyone.
-              </p>
+                More than just a competition, TechFest is an experience that promotes learning beyond classrooms, peer networking, and exposure to emerging technologies. The goal is to inspire students to think differently, build confidently, and prepare for future challenges in the tech industry.              </p>
             </div>
           </div>
         </div>

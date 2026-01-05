@@ -6,69 +6,60 @@ const RulesSection = () => {
       icon: Users,
       title: "Team Formation",
       items: [
-        "Teams can have 1 to 4 members",
-        "All team members must be from recognized institutions",
-        "Cross-college teams are allowed",
-        "One person can be part of only one team",
-        "Team leader must be designated during registration",
+        "Teams can consist of a minimum of 1 and a maximum of 4 members",
+        "All participants must be currently enrolled in a recognized educational institution",
+        "Inter-college (cross-college) teams are permitted",
+        "A participant is allowed to be part of only one team",
+        "Each team must designate a team leader during registration",
+        "A team is permitted to participate in a maximum of two events",
+        "If a team registers for two events scheduled at the same time, they may either split the team to participate in both or choose to participate in only one event",
+        "Solo participants registering for two events must manage event participation on their own",
       ],
     },
     {
       icon: ClipboardCheck,
       title: "Registration & Verification",
       items: [
-        "Registration fee is non-refundable",
-        "Valid college ID mandatory for all participants",
-        "Email and phone verification required",
-        "Registration closes 48 hours before event",
-        "Spot registration subject to availability",
-      ],
-    },
-    {
-      icon: Shield,
-      title: "Project / Event Rules",
-      items: [
-        "All projects must be original work",
-        "Pre-built projects or templates not allowed",
-        "Open source libraries and APIs permitted",
-        "Projects must be started during the event",
-        "Complete documentation required for submission",
+        "The registration fee is non-refundable under any circumstances",
+        "A valid college ID card is mandatory for all participants and must be produced upon request",
+        "Email ID and phone number verification are mandatory during registration",
+        "Spot registration will be available only if slots remain vacant",
       ],
     },
     {
       icon: Scale,
       title: "Evaluation & Judging",
       items: [
-        "Judging based on innovation, execution & presentation",
-        "Judges' decision is final and binding",
-        "Plagiarism will lead to immediate disqualification",
-        "Live demo required during evaluation",
-        "Technical interview may be conducted",
+        "Participants will be evaluated based on innovation, execution, and presentation quality",
+        "The decision of the judges shall be final and binding",
+        "Any form of plagiarism or copied work will result in immediate disqualification",
+        "A live demonstration of the work/project is mandatory during evaluation",
+        "Judges may conduct a technical interview to assess participants’ understanding",
       ],
     },
     {
       icon: Building,
       title: "Facilities & Hospitality",
       items: [
-        "24-hour WiFi and power supply provided",
-        "Refreshments available throughout the event",
-        "Dedicated rest area for participants",
-        "Technical mentors available for guidance",
-        "Medical assistance on standby",
+        "Snacks and lunch will be provided to all registered participants",
+        "Both vegetarian and non-vegetarian food options will be available",
+        "Participants must bring their own laptops, required hardware, and all necessary materials",
+        "Internet connectivity will not be provided at the venue; participants must arrange their own access if required",
       ],
     },
     {
       icon: FileWarning,
       title: "Code of Conduct",
       items: [
-        "Respectful behavior towards all participants",
-        "No use of unauthorized tools or unfair means",
-        "Maintain discipline within venue premises",
-        "Follow safety guidelines at all times",
-        "Organizers reserve right to disqualify teams",
+        "All participants are expected to maintain respectful and professional behavior throughout the event",
+        "Use of unauthorized tools, unfair practices, or misconduct is strictly prohibited",
+        "Participants must maintain discipline within the venue premises at all times",
+        "All safety instructions issued by the organizers must be followed without exception",
+        "The organizing committee reserves the right to disqualify any team or participant violating the rules",
       ],
     },
   ];
+
 
   return (
     <section id="rules" className="section-container relative">
@@ -87,34 +78,65 @@ const RulesSection = () => {
         </div>
 
         {/* Rules Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {rules.map((section, index) => (
-            <div
-              key={section.title}
-              className="glass-card p-6 md:p-8 group hover:border-neon-cyan/30 transition-all duration-300"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-neon-cyan/20 to-neon-violet/20 flex items-center justify-center group-hover:from-neon-cyan/30 group-hover:to-neon-violet/30 transition-colors duration-300">
-                  <section.icon className="w-6 h-6 text-neon-cyan" />
-                </div>
-                <h3 className="font-heading font-bold text-xl text-foreground">
-                  {index + 1}. {section.title}
-                </h3>
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* First Card - Full Width */}
+          <div
+            className="glass-card p-6 md:p-8 group hover:border-neon-cyan/30 transition-all duration-300"
+          >
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-neon-cyan/20 to-neon-violet/20 flex items-center justify-center group-hover:from-neon-cyan/30 group-hover:to-neon-violet/30 transition-colors duration-300">
+                {(() => {
+                  const IconComponent = rules[0].icon;
+                  return <IconComponent className="w-6 h-6 text-neon-cyan" />;
+                })()}
               </div>
-              <ul className="space-y-3">
-                {section.items.map((item, itemIndex) => (
-                  <li
-                    key={itemIndex}
-                    className="flex items-start gap-3 text-muted-foreground"
-                  >
-                    <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-neon-cyan mt-2" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="font-heading font-bold text-xl text-foreground">
+                1. {rules[0].title}
+              </h3>
             </div>
-          ))}
+            <ul className="space-y-3">
+              {rules[0].items.map((item, itemIndex) => (
+                <li
+                  key={itemIndex}
+                  className="flex items-start gap-3 text-muted-foreground"
+                >
+                  <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-neon-cyan mt-2" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Remaining Cards - 2x2 Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {rules.slice(1).map((section, index) => (
+              <div
+                key={section.title}
+                className="glass-card p-6 md:p-8 group hover:border-neon-cyan/30 transition-all duration-300"
+                style={{ animationDelay: `${(index + 1) * 0.1}s` }}
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-neon-cyan/20 to-neon-violet/20 flex items-center justify-center group-hover:from-neon-cyan/30 group-hover:to-neon-violet/30 transition-colors duration-300">
+                    <section.icon className="w-6 h-6 text-neon-cyan" />
+                  </div>
+                  <h3 className="font-heading font-bold text-xl text-foreground">
+                    {index + 2}. {section.title}
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {section.items.map((item, itemIndex) => (
+                    <li
+                      key={itemIndex}
+                      className="flex items-start gap-3 text-muted-foreground"
+                    >
+                      <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-neon-cyan mt-2" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
