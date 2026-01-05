@@ -2,8 +2,8 @@ import { Mail, Phone, MapPin, Cpu, Code2 } from "lucide-react";
 
 const Footer = () => {
   const staffCoordinators = [
-    { name: "Ms.T.Sanmathi", role: "Event Coordinator", phone: "+91 635837 88872" },
-    { name: "Mrs.K.Kiruthika", role: "Technical Lead", phone: "+91 98765 43211" },
+    { name: "Ms.T.Sanmathi", role: "Event Coordinator", phone: "+91 63837 88872" },
+    { name: "Mrs.K.Kiruthika", role: "Technical Lead", phone: "+91 98948 67993" },
   ];
 
   const studentCoordinators = [
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Organized by the Department of Artificial Intelligence and Data Science in 
-              association with AiQubi Association. Join us for innovation, coding, and competition.
+              association with AiQubit Association. Join us for innovation, coding, and competition.
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-neon-pink to-neon-violet flex items-center justify-center">
