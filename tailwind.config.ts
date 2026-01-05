@@ -99,6 +99,10 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-20px)" },
         },
+        "spin-slow": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -109,6 +113,7 @@ export default {
         "scale-in": "scale-in 0.5s ease-out forwards",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         float: "float 6s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

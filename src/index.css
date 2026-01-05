@@ -215,3 +215,22 @@
     transform: scale(1);
   }
 }
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide default cursor on body */
+body {
+  cursor: none;
+}
+
+/* Show default cursor on inputs and textareas */
+input, textarea, select {
+  cursor: text !important;
+}
