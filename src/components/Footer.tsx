@@ -2,8 +2,8 @@ import { Mail, Phone, MapPin, Cpu, Code2 } from "lucide-react";
 
 const Footer = () => {
   const staffCoordinators = [
-    { name: "Ms.T.Sanmathi", role: "Event Coordinator" },
-    { name: "Mrs.K.Kiruthika", role: "Technical Lead" },
+    { name: "Ms.T.Sanmathi", designation: "Assistant Professor", role: "Event Coordinator" },
+    { name: "Mrs.K.Kiruthika", designation: "Assistant Professor", role: "Technical Lead" },
   ];
 
   const studentCoordinators = [
@@ -86,6 +86,7 @@ const Footer = () => {
                   {staffCoordinators.map((coordinator) => (
                     <li key={coordinator.name} className="text-sm">
                       <p className="font-semibold text-foreground">{coordinator.name}</p>
+                      <p className="text-muted-foreground text-xs">{coordinator.designation}</p>
                       <p className="text-muted-foreground text-xs">{coordinator.role}</p>
                     </li>
                   ))}
