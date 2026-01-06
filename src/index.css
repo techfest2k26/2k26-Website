@@ -120,6 +120,9 @@
     filter: blur(8px);
     transition: opacity 0.3s ease;
   }
+html, body {
+  overflow-x: hidden;
+}
 
   .neon-border:hover::before {
     opacity: 1;

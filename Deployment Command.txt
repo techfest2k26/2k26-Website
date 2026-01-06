@@ -3,4 +3,4 @@ npm run build
 git add .
 git commit -m "Update"
 git push origin master
-netlify deploy --prod --dir=dist.
+netlify deploy --prod --dir=dist
