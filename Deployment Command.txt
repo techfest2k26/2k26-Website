@@ -1,0 +1,6 @@
+cd "d:\Tech Fest 2K26\website"
+npm run build
+git add .
+git commit -m "Update"
+git push origin master
+netlify deploy --prod --dir=dist.

@@ -2,8 +2,8 @@ import { Mail, Phone, MapPin, Cpu, Code2 } from "lucide-react";
 
 const Footer = () => {
   const staffCoordinators = [
-    { name: "Ms.T.Sanmathi", role: "Event Coordinator", phone: "+91 63837 88872" },
-    { name: "Mrs.K.Kiruthika", role: "Technical Lead", phone: "+91 98948 67993" },
+    { name: "Ms.T.Sanmathi", role: "Event Coordinator" },
+    { name: "Mrs.K.Kiruthika", role: "Technical Lead" },
   ];
 
   const studentCoordinators = [
@@ -87,13 +87,6 @@ const Footer = () => {
                     <li key={coordinator.name} className="text-sm">
                       <p className="font-semibold text-foreground">{coordinator.name}</p>
                       <p className="text-muted-foreground text-xs">{coordinator.role}</p>
-                      <a 
-                        href={`tel:${coordinator.phone.replace(/\s/g, '')}`}
-                        className="flex items-center gap-2 text-neon-cyan hover:text-primary transition-colors mt-1"
-                      >
-                        <Phone className="w-3 h-3" />
-                        <span className="text-xs">{coordinator.phone}</span>
-                      </a>
                     </li>
                   ))}
                 </ul>
