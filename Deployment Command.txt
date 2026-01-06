@@ -1,6 +1,26 @@
+== GITHUB PAGES DEPLOYMENT GUIDE ==
+
+INITIAL SETUP (One-time):
+1. Go to GitHub repository settings
+2. Navigate to Pages section (Settings > Pages)
+3. Select "Deploy from a branch" as source
+4. Choose branch: master (or main)
+5. Select folder: /root or /docs (leave as /root if dist is in root)
+6. Save
+
+FOR DEPLOYMENT:
+Option 1 - Using npm script:
+npm run deploy
+
+Option 2 - Manual deployment:
 cd "d:\Tech Fest 2K26\website"
 npm run build
 git add .
-git commit -m "Update"
+git commit -m "Deploy"
 git push origin master
-netlify deploy --prod --dir=dist
+
+NOTES:
+- The 'base' path is set to "/Website/" in vite.config.ts
+- Site will be available at: https://yourusername.github.io/Website/
+- dist/ folder is built from src/ files
+- Push to master branch and GitHub Actions will auto-deploy
