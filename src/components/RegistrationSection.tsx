@@ -10,12 +10,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹200",
-          url: "https://forms.google.com/solo-without-certificate",
+          url: "https://forms.gle/aWFW5mZgTNG2heFP9",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹350",
-          url: "https://forms.google.com/solo-with-certificate",
+          url: "https://forms.gle/gBPdNj3QCGAZxDNw6",
         },
       ],
     },
@@ -26,12 +26,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹400",
-          url: "https://forms.google.com/duo-without-certificate",
+          url: "https://forms.gle/CGvSnEs5DJ7AtvQ46",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹550",
-          url: "https://forms.google.com/duo-with-certificate",
+          url: "https://forms.gle/K2sYZN7GpbTDQVBW9",
         },
       ],
     },
@@ -42,12 +42,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹600",
-          url: "https://forms.google.com/trio-without-certificate",
+          url: "https://forms.gle/3a1KSox7f8aRqjRNA",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹750",
-          url: "https://forms.google.com/trio-with-certificate",
+          url: "https://forms.gle/cd6kQeSbtkvGXBrT9",
         },
       ],
     },
@@ -58,12 +58,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹800",
-          url: "https://forms.google.com/team-without-certificate",
+          url: "https://forms.gle/QYJmgxY8TB7vEJMG6",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹950",
-          url: "https://forms.google.com/team-with-certificate",
+          url: "https://forms.gle/d1QpFqowPDhUCKrN9",
         },
       ],
     },
