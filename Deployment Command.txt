@@ -1,26 +1,26 @@
-== GITHUB PAGES DEPLOYMENT GUIDE ==
+== NETLIFY DEPLOYMENT GUIDE ==
 
-INITIAL SETUP (One-time):
-1. Go to GitHub repository settings
-2. Navigate to Pages section (Settings > Pages)
-3. Select "Deploy from a branch" as source
-4. Choose branch: master (or main)
-5. Select folder: /root or /docs (leave as /root if dist is in root)
-6. Save
+SETUP (One-time):
+1. Go to https://app.netlify.com/ with your NEW Netlify account
+2. Click "Add new site" → "Import an existing project"
+3. Select "GitHub" as your Git provider
+4. Authorize Netlify to access your GitHub account
+5. Select this repository (Tech Fest 2K26/Website)
+6. Configure build settings:
+   - Build command: npm run build
+   - Publish directory: dist
+7. Click "Deploy site"
 
-FOR DEPLOYMENT:
-Option 1 - Using npm script:
-npm run deploy
-
-Option 2 - Manual deployment:
-cd "d:\Tech Fest 2K26\website"
-npm run build
+FOR UPDATES:
+Simply push changes to your master branch:
+cd "d:\Tech Fest 2K26\Website"
 git add .
-git commit -m "Deploy"
+git commit -m "Your message"
 git push origin master
 
+Netlify will automatically build and deploy on every push!
+
 NOTES:
-- The 'base' path is set to "/Website/" in vite.config.ts
-- Site will be available at: https://yourusername.github.io/Website/
-- dist/ folder is built from src/ files
-- Push to master branch and GitHub Actions will auto-deploy
+- No manual deployment commands needed
+- Netlify handles builds automatically from GitHub
+- Site URL will be provided in your Netlify dashboard
