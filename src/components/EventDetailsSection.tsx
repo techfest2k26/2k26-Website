@@ -73,7 +73,7 @@ const EventDetailsSection = () => {
             <span className="neon-text-gradient">Our</span> Events
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-4">
-            Explore the exciting events at TECHFEST 2K25
+            Explore the exciting events at TECHFEST 2K26
           </p>
         </div>
 

@@ -39,7 +39,7 @@ const HeroSection = () => {
             className="text-xl md:text-2xl lg:text-3xl font-heading font-semibold text-muted-foreground mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            A National Level Technical Fest
+            A National-Level Technical Fest
           </p>
 
           {/* Tagline */}

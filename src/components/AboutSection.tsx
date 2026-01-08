@@ -52,7 +52,7 @@ const AboutSection = () => {
                 Welcome to TECHFEST 2K26
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                This National Level TechFest is a platform created for students who are passionate about technology, innovation, and real-world problem solving. The event brings together young minds from across the country to learn, compete, and collaborate in a professional and engaging environment.
+                This National Level TechFest is a platform created for students who are passionate about technology, innovation, and real-world problem-solving. The event brings together young minds from across the country to learn, compete, and collaborate in a professional and engaging environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 TechFest focuses on practical skills, creative thinking, and technical excellence. Through well-designed events such as Conceptum (Paper Presentation), Runtime Resolve (Code Debugging), ProtoVista (Project Expo), Synaptech (Tech Connection), and SkillVanta (Workshops), participants are encouraged to explore ideas, strengthen their skills, and showcase their talent.
