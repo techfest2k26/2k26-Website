@@ -7,8 +7,9 @@ const Footer = () => {
   ];
 
   const studentCoordinators = [
-    { name: "Deepak U K", role: "Registration Head", phone: "+91 93452 11194" },
-    { name: "Viyash S", role: "Event Manager", phone: "+91 82203 34059" },
+    { name: "M Karuppasamy", role: "Head Student Coordinator" },
+    { name: "Deepak U K", phone: "+91 93452 11194" },
+    { name: "Viyash S", phone: "+91 82203 34059" },
   ];
 
   return (
@@ -86,7 +87,6 @@ const Footer = () => {
                   {staffCoordinators.map((coordinator) => (
                     <li key={coordinator.name} className="text-sm">
                       <p className="font-semibold text-foreground">{coordinator.name}</p>
-                      <p className="text-muted-foreground text-xs">{coordinator.designation}</p>
                       <p className="text-muted-foreground text-xs">{coordinator.role}</p>
                     </li>
                   ))}
@@ -100,14 +100,18 @@ const Footer = () => {
                   {studentCoordinators.map((coordinator) => (
                     <li key={coordinator.name} className="text-sm">
                       <p className="font-semibold text-foreground">{coordinator.name}</p>
-                      <p className="text-muted-foreground text-xs">{coordinator.role}</p>
-                      <a 
-                        href={`tel:${coordinator.phone.replace(/\s/g, '')}`}
-                        className="flex items-center gap-2 text-neon-pink hover:text-primary transition-colors mt-1"
-                      >
-                        <Phone className="w-3 h-3" />
-                        <span className="text-xs">{coordinator.phone}</span>
-                      </a>
+                      {coordinator.role && (
+                        <p className="text-muted-foreground text-xs">{coordinator.role}</p>
+                      )}
+                      {coordinator.phone && (
+                        <a 
+                          href={`tel:${coordinator.phone.replace(/\s/g, '')}`}
+                          className="flex items-center gap-2 text-neon-pink hover:text-primary transition-colors mt-1"
+                        >
+                          <Phone className="w-3 h-3" />
+                          <span className="text-xs">{coordinator.phone}</span>
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
