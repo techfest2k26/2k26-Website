@@ -83,7 +83,7 @@ const HeroSection = () => {
               className="animate-glow-pulse"
               onClick={() => document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Register Now
+              Registration Closed
             </Button>
           </div>
 
