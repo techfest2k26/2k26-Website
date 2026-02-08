@@ -129,7 +129,6 @@ const RegistrationSection = () => {
                       variant={optIndex === 1 ? "neon" : "neon-outline"}
                       size="sm"
                       className="shrink-0"
-                      onClick={() => window.open(option.url, "_blank")}
                     >
                       Closed
                     </Button>
