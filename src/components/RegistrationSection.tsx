@@ -10,12 +10,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹200",
-          url: "https://forms.gle/aWFW5mZgTNG2heFP9",
+          url: "",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹350",
-          url: "https://forms.gle/gBPdNj3QCGAZxDNw6",
+          url: "",
         },
       ],
     },
@@ -26,12 +26,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹400",
-          url: "https://forms.gle/CGvSnEs5DJ7AtvQ46",
+          url: "",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹550",
-          url: "https://forms.gle/K2sYZN7GpbTDQVBW9",
+          url: "",
         },
       ],
     },
@@ -42,12 +42,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹600",
-          url: "https://forms.gle/3a1KSox7f8aRqjRNA",
+          url: "",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹750",
-          url: "https://forms.gle/cd6kQeSbtkvGXBrT9",
+          url: "",
         },
       ],
     },
@@ -58,12 +58,12 @@ const RegistrationSection = () => {
         {
           label: "Without Hardcopy Certificate",
           price: "₹800",
-          url: "https://forms.gle/QYJmgxY8TB7vEJMG6",
+          url: "",
         },
         {
           label: "With Hardcopy Certificate",
           price: "₹950",
-          url: "https://forms.gle/d1QpFqowPDhUCKrN9",
+          url: "",
         },
       ],
     },
@@ -78,7 +78,7 @@ const RegistrationSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="section-title">
-            <span className="neon-text-gradient">Register</span> for Events
+            <span className="neon-text-gradient">Closed</span> for Events
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-4">
             Choose your team size and certificate preference to register
