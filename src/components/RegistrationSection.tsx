@@ -131,7 +131,7 @@ const RegistrationSection = () => {
                       className="shrink-0"
                       onClick={() => window.open(option.url, "_blank")}
                     >
-                      Register
+                      Closed
                     </Button>
                   </div>
                 ))}
